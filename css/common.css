@@ -1,0 +1,38 @@
+html, body { background-color: #fafafc; } 
+header { } 
+footer { } 
+
+
+/* 공통 */
+:root {/* color */
+--color-bl: #1d1d1f;--color-dg: #767677;--color-lg: #c2c2c3; } 
+.EN { font-family: montserrat; letter-spacing: -0.025rem; } 
+.title { font-weight: 700; } 
+
+.main { } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 모바일 */
+@media (max-width: 1200px) {html, body { overflow-x: hidden; width: 100%; } 
+/* 이 아래 작성 */}

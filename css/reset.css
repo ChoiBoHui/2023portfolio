@@ -1,9 +1,5 @@
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-
-
 
 @font-face {
 	font-family:'montserrat';
@@ -98,6 +94,8 @@ ol {
 body {
   line-height: 1;
   font-family: 'apple', sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.010rem;
 }
 
 img {
