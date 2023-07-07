@@ -1,16 +1,53 @@
-html, body { background-color: #fafafc; } 
-header { } 
-footer { } 
-
+html, body { background-color: #fafafc; color: var(--color-bl); } 
 
 /* 공통 */
-:root {/* color */
---color-bl: #1d1d1f;--color-dg: #767677;--color-lg: #c2c2c3; } 
+:root { /* color */
+--color-bl: #1d1d1f; --color-dg: #767677; --color-lg: #c2c2c3; } 
 .EN { font-family: montserrat; letter-spacing: -0.025rem; } 
-.title { font-weight: 700; } 
+/* .imgShadow { box-shadow: 16px 16px 22px 0px rgba(0, 0, 0, 0.04); } */
+/* .imgShadow { box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.08); } */
 
-.main { } 
+/* header Staret */
+header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 40px; border-right: 1px solid var(--color-bl); } 
 
+/* footer Start */
+footer { position: fixed; bottom: 0; left: 0; width: 323px; padding: 30px 40px; border-top: 1px solid var(--color-bl); } 
+
+/* main Start */
+.main { position: relative; margin-left: 323px; padding: 0 40px 0 80px; } 
+/* 그라디언트 작업중 */
+/* .main .container::before { content: ""; display: block; width: 467px; } */
+.main .container section { margin-top: 207px; } 
+/* .main .container .contents { } */
+
+/* 타이틀 */
+.main .titleArea { margin-bottom: 20px; } 
+.main .titleArea .title { font-size: 24px; margin-bottom: 8px; } 
+.main .titleArea .title.EN { font-weight: 700; } 
+.main .titleArea .subTitle { color: var(--color-dg); font-size: 14px; } 
+
+/* .desArea { }  */
+/* 이미지 기준 설명글 구역 나누기 */
+.desArea .sectionWrap { display: flex; } 
+.desArea .sectionWrap .bodyText { display: block; width: 387px; min-width: 387px; font-size: 16px; } 
+/* 세팅 */
+.desArea .setting { margin-bottom: 50px; } 
+.desArea .setting div~div { margin-top: 10px; } 
+.desArea .setting div div { display: inline-block; } 
+.desArea .setting .title { font-weight: 700; margin-right: 8px; } 
+/* 이미지 설명 */
+.desArea .imgDes div div { display: inline-block; }
+.desArea .imgDes { line-height: 26px;} 
+.desArea .imgDes .title { font-weight: 700; margin-right: 8px; } 
+
+/* 이미지 영역 */
+.desArea .imgArea { display: flex; margin-left: 80px; text-align: left; } 
+.desArea .imgArea figure { display: block; text-align: center; } 
+.desArea .imgArea figure .des { font-size: 14px; margin-bottom: 8px; } 
+.desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
+
+/* section 구역별 */
+/* .hera { } */
 
 
 
@@ -34,5 +71,5 @@ footer { }
 
 
 /* 모바일 */
-@media (max-width: 1200px) {html, body { overflow-x: hidden; width: 100%; } 
-/* 이 아래 작성 */}
+@media (max-width: 1200px) { html, body { overflow-x: hidden; width: 100%; } 
+/* 이 아래 작성 */ } 
