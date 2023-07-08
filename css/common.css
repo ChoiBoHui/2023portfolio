@@ -73,7 +73,8 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 이미지 기준 설명글 구역 나누기 */
 .desArea .sectionWrap { position: relative; display: flex; margin-bottom: 80px; } 
 /* 스티키 height 값 필순데, 콘텐츠별로 높이값이 다르니까 바로 박아주기 */
-.desArea .sectionWrap .bodyText { position: sticky; top: 209px; display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
+/* .sectionWrap .bodyText 에 붙여줘야함!!! */
+.desArea .sectionWrap .bodyText { position: sticky; top: 239px; display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
 .desArea .sectionWrap .bodyText .ps { font-size: 14px; color: var(--color-dg); line-height: 21px; } 
 /* 세팅 */
 .desArea .setting { margin-bottom: 50px; } 
