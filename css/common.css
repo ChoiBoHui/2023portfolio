@@ -42,7 +42,9 @@ header h1:hover .name span { opacity: 1; }
 
 /* footer Start */
 footer { position: fixed; bottom: 0; left: 0; width: 323px; padding: 30px 30px 30px 40px; border-top: 1px solid var(--color-bl); } 
+footer .kakaoChat { font-size: 16px; font-weight: 700; margin-bottom: 5px;}
 footer .email { font-size: 16px; font-weight: 600; margin-bottom: 16px; } 
+footer .kakaoChat span { font-size: 14px; font-weight: 500; margin-right: 4px; } 
 footer .email span { font-size: 14px; font-weight: 500; margin-right: 8px; } 
 footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; } 
 
