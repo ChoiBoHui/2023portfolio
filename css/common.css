@@ -22,10 +22,10 @@ header h1:hover .name span { opacity: 1; }
 /* 메뉴 영역 */
 /* header .nav { } */
 .nav>ul>li~li { margin-top: 9px; } 
-/* .nav .mainMenu { }  */
+/* .nav .mainMenu { } */
 .nav .mainMenu a { display: inline-block; font-size: 18px; font-weight: 500; color: var(--color-lg); } 
 .nav .mainMenu a:hover { color: var(--color-bl); } 
-.nav .mainMenu.view a {position: relative;  color: var(--color-bl); } 
+.nav .mainMenu.view a { position: relative; color: var(--color-bl); } 
 .nav .mainMenu.view a::after { content: "*"; top: -7px; right: -10px; position: absolute; display: block; font-family: montserrat; font-size: 26px; font-weight: 500; color: var(--color-bl); } 
 
 
@@ -33,7 +33,7 @@ header h1:hover .name span { opacity: 1; }
 .nav .subMenu { position: absolute; display: none; top: 207px; left: 0; width: 100%; border-top: 1px solid var(--color-bl); padding: 30px 30px 30px 40px; } 
 .nav .subMenu.view { display: block; } 
 .nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; } 
-.nav .subMenu>ul>li~li {margin-top: 3px;}
+.nav .subMenu>ul>li~li { margin-top: 3px; } 
 .nav .subMenu a { position: relative; display: inline-block; font-size: 16px; font-weight: 300; padding: 4px 8px 4px 0; } 
 .nav .subMenu a.EN { font-weight: 500; } 
 .nav .subMenu a.view::after { content: "*"; position: absolute; top: 0; right: 0; display: block; font-family: montserrat; font-size: 18px; font-weight: 500; color: var(--color-bl); } 
@@ -52,21 +52,28 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* main Start */
 .main { position: relative; margin-left: 323px; padding: 0 40px 0 80px; } 
-/* 그라디언트 작업중 */
-.main .container::before { content: ""; display: block; width: 467px; }
-.main .container section { margin-top: 207px; } 
+/* 그라디언트 작업 취소 포지션 스티키로 대체 */
+/* 샘플 background: linear-gradient(to top, red 10%, black 50%, cyan 50%); */
+/* .main .container::before { content: ""; display: block; width: 474px; height: 238px; position: fixed; top: 0; left: 323px; background: linear-gradient(to bottom, #fafafc 208px, #fafafc 208px, transparent 238px); } */
+
+
+
+
+
+.main .container section { margin-top: 235px; } 
 /* .main .container .contents { } */
 
 /* 타이틀 */
-.main .titleArea { margin-bottom: 20px; } 
+.main .titleArea { position: sticky; top: 29px; left: 0; height: 46px; margin-bottom: 20px; } 
 .main .titleArea .title { font-size: 24px; margin-bottom: 8px; } 
 .main .titleArea .title.EN { font-weight: 700; } 
 .main .titleArea .subTitle { color: var(--color-dg); font-size: 14px; } 
 
 /* .desArea { } */
 /* 이미지 기준 설명글 구역 나누기 */
-.desArea .sectionWrap { display: flex; margin-bottom: 80px; } 
-.desArea .sectionWrap .bodyText { display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
+.desArea .sectionWrap { position: relative; display: flex; margin-bottom: 80px; } 
+/* 스티키 height 값 필순데, 콘텐츠별로 높이값이 다르니까 바로 박아주기 */
+.desArea .sectionWrap .bodyText { position: sticky; top: 209px; display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
 .desArea .sectionWrap .bodyText .ps { font-size: 14px; color: var(--color-dg); line-height: 21px; } 
 /* 세팅 */
 .desArea .setting { margin-bottom: 50px; } 
@@ -110,4 +117,4 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 모바일 */
 /* @media (max-width: 1200px) { html, body { overflow-x: hidden; width: 100%; } 
-}  */
+ }*/
