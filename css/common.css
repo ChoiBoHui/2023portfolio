@@ -7,7 +7,7 @@ html, body { background-color: #fafafc; color: var(--color-bl); }
 .EN { font-family: montserrat; letter-spacing: -0.027rem; } 
 
 /* header Staret */
-header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); } 
+header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); z-index: 1; } 
 /* 로고영역 */
 header h1 { margin-bottom: 22px; } 
 header h1 a { display: inline-block; vertical-align: bottom; } 
@@ -41,8 +41,8 @@ header h1:hover .name span { opacity: 1; }
 
 
 /* footer Start */
-footer { position: fixed; bottom: 0; left: 0; width: 323px; padding: 30px 30px 30px 40px; border-top: 1px solid var(--color-bl); } 
-footer .kakaoChat { font-size: 16px; font-weight: 700; margin-bottom: 5px;}
+footer { position: fixed; bottom: 0; left: 0; width: 323px; padding: 30px 30px 30px 40px; border-top: 1px solid var(--color-bl); z-index: 2; } 
+footer .kakaoChat { font-size: 16px; font-weight: 700; margin-bottom: 5px; } 
 footer .email { font-size: 16px; font-weight: 600; margin-bottom: 16px; } 
 footer .kakaoChat span { font-size: 14px; font-weight: 500; margin-right: 4px; } 
 footer .email span { font-size: 14px; font-weight: 500; margin-right: 8px; } 
