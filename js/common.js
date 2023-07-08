@@ -1,9 +1,34 @@
 $(function () {
-    const nav = $('.nav')
 
     $('.nav a').on('click', function (e) {
         e.preventDefault();
     });
+
+    // 메인메뉴 클릭 이벤트
+    $('.nav .mainMenu').on('click', function () {
+        let mainMenu = $(this).closest('.mainMenu');
+        let li = $(this).closest('li');
+
+        // 붙이기
+        mainMenu.addClass('view');
+        li.find('.subMenu').addClass('view');
+        li.find('.subMenu ul li:first-child a').addClass('view');
+        // 지우기
+        li.siblings().find('.mainMenu').removeClass('view');
+        li.siblings().find('.subMenu').removeClass('view');
+        li.siblings().find('.subMenu a').removeClass('view');
+    });
+
+    // 서브메뉴 클릭 이벤트
+    $('.nav .subMenu ul a').on('click', function () {
+        let li = $(this).closest('li');
+
+        $(this).addClass('view');
+        li.siblings().find('a').removeClass('view');
+    });
+
+
+
 
     // $('.tab_menu>li>a').on('click', function (e) {
     //     e.preventDefault();
