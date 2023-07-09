@@ -56,16 +56,11 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 
 
-
-
 /* main Start */
 .main { position: relative; margin-left: 323px; padding: 0 40px 0 80px; } 
 /* 그라디언트 작업 취소 포지션 스티키로 대체 */
 /* 샘플 background: linear-gradient(to top, red 10%, black 50%, cyan 50%); */
 /* .main .container::before { content: ""; display: block; width: 474px; height: 238px; position: fixed; top: 0; left: 323px; background: linear-gradient(to bottom, #fafafc 208px, #fafafc 208px, transparent 238px); } */
-
-
-
 
 
 .main .container section { margin-top: 235px; display: none; } 

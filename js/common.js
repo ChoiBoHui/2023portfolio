@@ -38,6 +38,7 @@ $(function () {
         li.siblings().find('.subMenu').removeClass('view');
 
         // subMenu가 가진 첫번째 li 적용
+        li.find('.subMenu li').removeClass('view');
         li.siblings().find('.subMenu li').removeClass('view');
         li.find('.subMenu ul li:first-child').addClass('view');
 
@@ -73,8 +74,5 @@ $(function () {
         // 다른 형제 section들에서 .view 클래스 제거
         $('.main > .container > section[data-index!="' + liIndex + '"]').removeClass('view');
     });
-
-    // var heraindex = $('section.dashBoard').attr('data-index');
-    // console.log(heraindex);
 
 });
