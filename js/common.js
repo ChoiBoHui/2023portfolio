@@ -34,6 +34,42 @@ $(function () {
         $('footer').toggleClass('fix');
     });
 
+    function menulist() {
+        let startIndex = 0;
+
+        $('.subMenuList').each(function () {
+            $(this).find('li').each(function (index) {
+                $(this).attr('data-index', startIndex + index);
+            });
+
+            startIndex += $(this).find('li').length;
+        });
+
+        $('.main > .container > section').each(function (index) {
+            $(this).attr('data-index', index);
+        });
+    };
+    menulist();
+
+    $('.subMenuList li').on('click', function () {
+        var index = $(this).attr('data-index');
+        console.log(index);
+    });
+
+    $('.subMenuList li').on('click', function () {
+        const liIndex = $(this).attr('data-index');
+
+        // 현재 클릭한 li와 같은 인덱스 번호를 가진 section에 .view 클래스 추가
+        $('.main > .container > section[data-index="' + liIndex + '"]').addClass('view');
+
+        // 다른 형제 section들에서 .view 클래스 제거
+        $('.main > .container > section[data-index!="' + liIndex + '"]').removeClass('view');
+    });
+
+
+
+    var heraindex = $('section.dashBoard').attr('data-index');
+    console.log(heraindex);
 
 
     // $('.tab_menu>li>a').on('click', function (e) {
