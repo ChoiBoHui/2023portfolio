@@ -27,6 +27,12 @@ $(function () {
         li.siblings().find('a').removeClass('view');
     });
 
+    // 해상도 1880px 이하, 메뉴 fix
+    $('.triggerBtn').on('click', function () {
+        $(this).toggleClass('fix');
+        $('header').toggleClass('fix');
+        $('footer').toggleClass('fix');
+    });
 
 
 
