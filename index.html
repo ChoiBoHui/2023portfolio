@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>최보희 2023portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="icon" type="image/png" href="./img/favicon.png" />
 </head>
@@ -209,17 +208,19 @@
                                                 모션을 활용한 UI, UX 적인 부분이 디자이너와 퍼블리셔가 분업하는 과정에서는 생략되는 경우가 많은데, 퍼블리싱에서 해당 부분을
                                                 놓치지 않고 구현하기 위해 많은 시간을 사용했습니다. 그중 헤더 부분이 가장 공을 많이 들인 부분으로
                                             </div>
-                                            <div class="dot">
-                                                pc 화면에서 스크롤 시 메뉴바가 상단에 붙어 따라다님.
-                                            </div>
-                                            <div class="dot">
-                                                pc 화면에서 검색창의 닫기 버튼을 누르지 않아도, 검색창 영역 밖으로 마우스 이탈 시 검색창 닫힘.
-                                            </div>
-                                            <div class="dot">
-                                                mob 화면에서 스크롤 된 상세 메뉴들은, 메뉴 창을 다시 열었을 때 초기화하기.
-                                            </div>
                                             <div class="dot br">
-                                                mob 화면에서 검색창과 같이 키보드가 올라오게 되면서 생기는 스크롤을 막고, 뒤쪽 화면을 최상단으로 이동.
+                                                <div>
+                                                    pc 화면에서 스크롤 시 메뉴바가 상단에 붙어 따라다님.
+                                                </div>
+                                                <div>
+                                                    pc 화면에서 검색창의 닫기 버튼을 누르지 않아도, 검색창 영역 밖으로 마우스 이탈 시 검색창 닫힘.
+                                                </div>
+                                                <div>
+                                                    mob 화면에서 스크롤 된 상세 메뉴들은, 메뉴 창을 다시 열었을 때 초기화하기.
+                                                </div>
+                                                <div>
+                                                    mob 화면에서 검색창과 같이 키보드가 올라오게 되면서 생기는 스크롤을 막고, 뒤쪽 화면을 최상단으로 이동.
+                                                </div>
                                             </div>
                                             <div>
                                                 같은 UI, UX에 꼭 필요한 기본적이면서도 놓치기 쉬운 부분에 집중하여 작업했습니다.
@@ -234,16 +235,54 @@
                                 <div class="imgArea">
                                     <figure>
                                         <div class="des">아이폰12 플레이 영상</div>
-                                        <iframe style="width: 310px; min-width:310;"
-                                            src="https://youtube.com/shorts/mvIOGic_txI"
-                                            title="utb - Chantiers d'avenir - Rosny-sous-bois" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        <iframe width="310" height="670" src="https://www.youtube.com/embed/mvIOGic_txI"
+                                            title="개인 포트폴리오용 자료" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                             allowfullscreen></iframe>
                                     </figure>
-                                    <figure style="margin-left: 30px;">
+                                    <!-- <figure style="margin-left: 30px;">
                                         <div class="des">갤럭시노트 10 플레이 영상</div>
-                                        <video controls src="https://youtube.com/shorts/mvIOGic_txI"
+                                        <video controls src="https://www.youtube.com/embed/21ZNI_fYw0s"
                                             style="width: 310px; min-width:310;"></video>
+                                    </figure> -->
+                                </div>
+                            </div>
+                            <!-- 여기서부터 구간별 설명 들어가서 스티키 없어도 됨 -->
+                            <div class="sectionWrap">
+                                <div class="bodyText">
+                                    <div class="imgDes">
+                                        <div>
+                                            <div class="title">header</div>
+                                            <div class="dot">
+                                                <div>
+                                                    최상단에 topbanner가 고정되어 있고, 일정 높이 이상 스크롤 하게 되면 gnb가 화면 상단에 붙어서 따라오는 형식
+                                                </div>
+                                                <div>
+                                                    메뉴별 서브 메뉴 구성
+                                                </div>
+                                                <div>
+                                                    검색창에 검색어 입력 시 `input type="hidden"` 에 값 전달 후, alert 창에 value 표시
+                                                </div>
+                                                <div>
+                                                    메뉴 및 검색창 오픈 시, background에 블러를 활용해 메뉴의 집중도를 높임
+                                                </div>
+                                                <div>
+                                                    메뉴 및 검색창 오픈 시, 마우스가 헤더에서 이탈하거나 블러가 된 배경을 클릭하면 창 닫힘
+                                                </div>
+                                                <div>
+                                                    메뉴 및 검색창 오픈 시, pc의 경우 스크롤 하면 닫히고 모바일에서는 배경 스크롤을 막음
+                                                </div>
+                                                <div>
+                                                    매장 찾기, 로그인 버튼 클릭 시 해당 페이지로 이동
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="imgArea">
+                                    <figure>
+                                        <div class="des">이미지 설명글</div>
+                                        <img src="" alt="">
                                     </figure>
                                 </div>
                             </div>
@@ -303,7 +342,6 @@
 
     <!-- script Start -->
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/common.js"></script>
 </body>
 

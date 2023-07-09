@@ -90,9 +90,10 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgDes div div { display: inline-block; } 
 .desArea .imgDes { line-height: 26px; } 
 .desArea .imgDes .title { font-weight: 700; margin-right: 6px; } 
-.desArea .imgDes .br { margin-bottom: 14px; } 
-.desArea .imgDes .dot { font-size: 15px;} 
-.desArea .imgDes .dot::before { content: "■"; display: inline-block; font-size: 10px; margin-right: 8px; } 
+.desArea .imgDes .br { margin-bottom: 18px; } 
+.desArea .imgDes .dot { font-size: 15px; line-height: 20px;} 
+.desArea .imgDes .dot div~div {margin-top: 6px;}
+.desArea .imgDes .dot div::before { content: "■"; display: inline-block; font-size: 10px; margin-right: 8px; } 
 
 /* 이미지 영역 */
 .desArea .imgArea { display: flex; text-align: left; padding-right: 40px; } 
