@@ -5,7 +5,7 @@ html, body { background-color: #fafafc; color: var(--color-bl); }
 :root { /* color */
 --color-bl: #1d1d1f; --color-dg: #767677; --color-lg: #c2c2c3; --color-bg: #fafafc; } 
 .EN { font-family: montserrat; letter-spacing: -0.027rem; } 
-.cspointer {cursor: pointer;}
+.cspointer { cursor: pointer; } 
 
 /* header Staret */
 header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: left 0.3s; z-index: 1; } 
@@ -80,6 +80,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* .desArea { } */
 /* 이미지 기준 설명글 구역 나누기 */
 .desArea .sectionWrap { position: relative; display: flex; margin-bottom: 200px; } 
+.desArea .sectionWrap:last-child { margin-bottom: 80px; } 
 /* 스티키 height 값 필순데, 콘텐츠별로 높이값이 다르니까 바로 박아주기 */
 /* .sectionWrap .bodyText 에 붙여줘야함!!! */
 .desArea .sectionWrap .bodyText { position: sticky; top: 239px; display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
@@ -94,6 +95,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgDes { line-height: 26px; } 
 .desArea .imgDes .title { display: block; font-weight: 700; margin-right: 6px; } 
 .desArea .imgDes .br { margin-bottom: 18px; } 
+.desArea .imgDes .sbr { margin-bottom: 10px; } 
 .desArea .imgDes .dot { font-size: 15px; line-height: 20px; } 
 .desArea .imgDes .dot div~div { margin-top: 6px; } 
 .desArea .imgDes .dot div::before { content: "■"; display: inline-block; font-size: 10px; margin-right: 8px; } 
@@ -103,19 +105,24 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgArea figure { display: block; text-align: center; } 
 .desArea .imgArea figure .des { font-size: 14px; margin-bottom: 8px; } 
 .desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
+.desArea .imgArea figure video { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
 /* 이미지 영역이 스티키 돼야 할때는 클래스 넣어주고, 높이값 박아주기 */
 .desArea .imgSticky { position: sticky; top: 239px; } 
 
 /* section 구역별 */
 .hera .heraHeader { display: flex; } 
-/* .hera .heraHeader .bodyText { height: 309px; margin-bottom: 80px; }  */
+.hera .heraHeader .imgDes .ps { margin-bottom: 10px; }
 .hera .heraHeader .imgArea { position: relative; height: 518px; overflow-y: hidden; } 
-.hera .heraHeader .submenuHover { position: absolute; display: none; right: 0; top: 22px; padding-right: 40px; } 
-.hera .heraHeader .submenuHover img { box-shadow: none; } 
+.hera .heraHeader .submenuHover { position: absolute; display: none; left: 0; top: 22px; padding-right: 40px; } 
+.hera .heraHeader .searchHover { position: absolute; display: none; left: 0; top: 22px; padding-right: 40px; } 
+.hera .heraHeader .submenuHover img,
+.hera .heraHeader .searchHover img { box-shadow: none; } 
 
 .hera .heraMain { display: flex; } 
 .hera .heraMain .bodyText { height: 168px; margin-bottom: 80px; } 
-.hera .heraMain .imgArea { height: 1538px; } 
+.hera .heraMain .imgArea { position: relative; height: 1538px; } 
+.hera .heraMain .snsmodalHover { position: absolute; display: none; left: 0; bottom: 0; padding-right: 40px; } 
+.hera .heraMain .snsmodalHover img { box-shadow: none; } 
 
 .hera .heraFooter { display: flex; } 
 /* .hera .heraFooter .bodyText { height: 49px; margin-bottom: 60px; } 
@@ -123,6 +130,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 .hera .heraPartsDes { display: block; } 
 
+.hera .imgDes .ps {margin-top: 6px;}
 
 
 

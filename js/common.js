@@ -75,17 +75,46 @@ $(function () {
         $('.main > .container > section[data-index!="' + liIndex + '"]').removeClass('view');
     });
 
+    // 헤라 파트별 설명부분 리스트 마우스호버시 이미지 노출
     function sectionHeraHover() {
 
-        $('.hoverHeraSubmenu').on('mouseenter', function () {
-            // $('.hera .heraHeader .submenuHover').addClass('on');
-            $('.hera .heraHeader .submenuHover').fadeIn();
-        });
-        $('.hoverHeraSubmenu').on('mouseleave', function () {
-            // $('.hera .heraHeader .submenuHover').removeClass('on');
-            $('.hera .heraHeader .submenuHover').fadeOut();
-        });
+        // $('.hoverHeraSubmenu').on('mouseenter', function () {
+        //     // $('.hera .heraHeader .submenuHover').addClass('on');
+        //     $('.hera .heraHeader .submenuHover').fadeIn();
+        // });
+        // $('.hoverHeraSubmenu').on('mouseleave', function () {
+        //     // $('.hera .heraHeader .submenuHover').removeClass('on');
+        //     $('.hera .heraHeader .submenuHover').fadeOut();
+        // });
+
+        $('.hoverHeraSubmenu').hover(
+            function () {
+                $('.hera .heraHeader .submenuHover').fadeIn();
+            },
+            function () {
+                $('.hera .heraHeader .submenuHover').fadeOut();
+            }
+        );
+        $('.hoverHeraSearch').hover(
+            function () {
+                $('.hera .heraHeader .searchHover').fadeIn();
+            },
+            function () {
+                $('.hera .heraHeader .searchHover').fadeOut();
+            }
+        );
+        $('.hoverHeraSnsmodal').hover(
+            function () {
+                $('.hera .heraMain .snsmodalHover').fadeIn();
+            },
+            function () {
+                $('.hera .heraMain .snsmodalHover').fadeOut();
+            }
+        );
+
 
     }
     sectionHeraHover();
+
+
 });
