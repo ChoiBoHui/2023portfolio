@@ -33,10 +33,10 @@ header h1:hover .name span { opacity: 1; }
 /* 서브메뉴 영역 */
 .nav .subMenu { position: absolute; display: none; top: 179px; left: 0; width: 100%; border-top: 1px solid var(--color-bl); padding: 30px 30px 30px 40px; } 
 .nav .subMenu.view { display: block; } 
-.nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; } 
+.nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; line-height: 18px; color: var(--color-dg);} 
 .nav .subMenu>ul>li~li { margin-top: 3px; } 
-.nav .subMenu a { position: relative; display: inline-block; font-size: 16px; font-weight: 300; padding: 4px 8px 4px 0; } 
-.nav .subMenu a.EN { font-weight: 500; } 
+.nav .subMenu a { position: relative; display: inline-block; font-size: 15px; font-weight: 300; padding: 4px 8px 4px 0; margin-bottom: 2px;} 
+.nav .subMenu a.EN {font-size: 16px; font-weight: 500; margin-bottom: 0; } 
 .nav .subMenu li.view a::after { content: "*"; position: absolute; top: 0; right: 0; display: block; font-family: montserrat; font-size: 18px; font-weight: 500; color: var(--color-bl); } 
 
 /* 메뉴버튼 영역 */
