@@ -75,4 +75,17 @@ $(function () {
         $('.main > .container > section[data-index!="' + liIndex + '"]').removeClass('view');
     });
 
+    function sectionHeraHover() {
+
+        $('.hoverHeraSubmenu').on('mouseenter', function () {
+            // $('.hera .heraHeader .submenuHover').addClass('on');
+            $('.hera .heraHeader .submenuHover').fadeIn();
+        });
+        $('.hoverHeraSubmenu').on('mouseleave', function () {
+            // $('.hera .heraHeader .submenuHover').removeClass('on');
+            $('.hera .heraHeader .submenuHover').fadeOut();
+        });
+
+    }
+    sectionHeraHover();
 });
