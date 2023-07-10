@@ -1,5 +1,5 @@
 html, body { background-color: #fafafc; color: var(--color-bl); } 
-/* 빠른 참고, apple 레귤러 300, 볼드 700, 영문 미디움 500, 세미볼드 600 */
+/* 빠른 참고, apple 레귤러 300, 볼드 700, 엑스트라볼드 800 영문 미디움 500, 세미볼드 600 */
 
 /* 공통 */
 :root { /* color */
@@ -33,10 +33,10 @@ header h1:hover .name span { opacity: 1; }
 /* 서브메뉴 영역 */
 .nav .subMenu { position: absolute; display: none; top: 179px; left: 0; width: 100%; border-top: 1px solid var(--color-bl); padding: 30px 30px 30px 40px; } 
 .nav .subMenu.view { display: block; } 
-.nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; line-height: 18px; color: var(--color-dg);} 
+.nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; line-height: 18px; color: var(--color-dg); } 
 .nav .subMenu>ul>li~li { margin-top: 3px; } 
-.nav .subMenu a { position: relative; display: inline-block; font-size: 15px; font-weight: 300; padding: 4px 8px 4px 0; margin-bottom: 2px;} 
-.nav .subMenu a.EN {font-size: 16px; font-weight: 500; margin-bottom: 0; } 
+.nav .subMenu a { position: relative; display: inline-block; font-size: 15px; font-weight: 300; padding: 4px 8px 4px 0; margin-bottom: 2px; } 
+.nav .subMenu a.EN { font-size: 16px; font-weight: 500; margin-bottom: 0; } 
 .nav .subMenu li.view a::after { content: "*"; position: absolute; top: 0; right: 0; display: block; font-family: montserrat; font-size: 18px; font-weight: 500; color: var(--color-bl); } 
 
 /* 메뉴버튼 영역 */
@@ -73,7 +73,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 타이틀 */
 .main .titleArea { position: sticky; top: 29px; left: 0; height: 46px; margin-bottom: 20px; } 
-.main .titleArea .title { font-size: 24px; margin-bottom: 8px; } 
+.main .titleArea .title { font-size: 24px; margin-bottom: 8px; font-weight: 800; } 
 .main .titleArea .title.EN { font-weight: 700; } 
 .main .titleArea .subTitle { color: var(--color-dg); font-size: 14px; } 
 
@@ -104,8 +104,8 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgArea { display: flex; text-align: left; } 
 .desArea .imgArea figure { display: block; text-align: center; } 
 .desArea .imgArea figure .des { font-size: 14px; margin-bottom: 8px; } 
-.desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
-.desArea .imgArea figure video { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
+.desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08); } 
+.desArea .imgArea figure video { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08); } 
 /* 이미지 영역이 스티키 돼야 할때는 클래스 넣어주고, 높이값 박아주기 */
 .desArea .imgSticky { position: sticky; top: 239px; } 
 
@@ -152,7 +152,21 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .dashBoard .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
 
 
-/* 핑크 작업물 */
+/* 핑크 및 개인 작업물 */
+/* 북콘서트 인덱스 */
+.gwangbok .index .imgArea { width: 986px; min-width: 986px; } 
+.gwangbok .index .imgArea figure .des {transform: translateY(-120px);}
+.gwangbok .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
+
+.gwangbok .imgArea figure.cardNews .des {transform: translateY(0);}
+.gwangbok .imgArea figure.cardNews img { transform: translateY(0); width: 522px; margin-bottom: 20px; } 
+.gwangbok .desArea .imgArea { display: block; } 
+
+
+
+
+
+
 
 
 
