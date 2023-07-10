@@ -31,7 +31,7 @@ header h1:hover .name span { opacity: 1; }
 
 
 /* 서브메뉴 영역 */
-.nav .subMenu { position: absolute; display: none; top: 207px; left: 0; width: 100%; border-top: 1px solid var(--color-bl); padding: 30px 30px 30px 40px; } 
+.nav .subMenu { position: absolute; display: none; top: 179px; left: 0; width: 100%; border-top: 1px solid var(--color-bl); padding: 30px 30px 30px 40px; } 
 .nav .subMenu.view { display: block; } 
 .nav .subMenu .des { font-size: 14px; font-weight: 300; margin-bottom: 6px; } 
 .nav .subMenu>ul>li~li { margin-top: 3px; } 
@@ -101,7 +101,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgDes .dot div::before { content: "■"; display: inline-block; font-size: 10px; margin-right: 8px; } 
 
 /* 이미지 영역 */
-.desArea .imgArea { display: flex; text-align: left; padding-right: 40px; } 
+.desArea .imgArea { display: flex; text-align: left; } 
 .desArea .imgArea figure { display: block; text-align: center; } 
 .desArea .imgArea figure .des { font-size: 14px; margin-bottom: 8px; } 
 .desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); } 
@@ -109,9 +109,17 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 이미지 영역이 스티키 돼야 할때는 클래스 넣어주고, 높이값 박아주기 */
 .desArea .imgSticky { position: sticky; top: 239px; } 
 
+
+
+
+
+/* 목업이미지 들어가는 메인 index */
+.desArea .sectionWrap.index { margin-bottom: 80px; } 
 /* section 구역별 */
 /* 헤라 */
-.heraParts .imgArea figure { width: 986px; } 
+/* 헤라 인덱스 */
+.hera .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.hera .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
 
 .hera .heraHeader { display: flex; } 
 .hera .heraHeader .imgDes .ps { margin-bottom: 10px; } 
@@ -132,15 +140,19 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .hera .heraFooter .imgArea { height: 94px; } 
 
 .hera .heraPartsDes { display: block; } 
+.hera .heraParts .imgArea figure { width: 986px; } 
 /* .heraParts .imgArea { min-width: 953px; overflow: hidden; } */
 
 .hera .imgDes .ps { margin-top: 6px; } 
 
 
+/* 현대글로벌 대쉬보드 퍼블 */
+/* 대쉬보드 인덱스 */
+.dashBoard .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.dashBoard .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
 
 
-
-
+/* 핑크 작업물 */
 
 
 

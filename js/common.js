@@ -116,5 +116,25 @@ $(function () {
     }
     sectionHeraHover();
 
+    // 퍼블 대쉬보드 디자인 링크 부분
+    $('.dashBoard .dashboadLink a').on('click', function (e) {
+        e.preventDefault();
+        // 메인메뉴
+        $('.nav .mainMenu').removeClass('view');
+        $('.nav .mainMenu.WD').addClass('view');
+
+        // 서브메뉴
+        $('.nav .subMenu').removeClass('view');
+        $('.nav .subMenu.WD').addClass('view');
+
+        // 서브메뉴 리스트
+        $('.nav .subMenu .subMenuList li').removeClass('view');
+        $('.nav .subMenuList.WD .dashboardLink').addClass('view');
+
+        // 섹션
+        $('section').removeClass('view')
+        $('.dashboardDesign').addClass('view');
+    })
+
 
 });
