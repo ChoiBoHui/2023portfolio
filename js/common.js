@@ -29,6 +29,9 @@ $(function () {
         let index = subMenuFirstLi.attr('data-index');
         let targetSection = $('.main > .container > section').eq(index);
 
+        // 메인메뉴랑 서브메뉴 클릭할때 스크롤 top으로
+        $('html, body').scrollTop(0);
+
         // mainMenu 적용
         $(this).addClass('view');
         li.siblings().find('.mainMenu').removeClass('view');
@@ -52,6 +55,7 @@ $(function () {
     // 서브메뉴 클릭 이벤트
     $('.nav .subMenu .subMenuList li').on('click', function () {
         // let li = $(this).closest('li');
+        $('html, body').scrollTop(0);
 
         $(this).addClass('view');
         $(this).siblings().removeClass('view');
