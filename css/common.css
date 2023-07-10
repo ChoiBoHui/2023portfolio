@@ -110,27 +110,31 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgSticky { position: sticky; top: 239px; } 
 
 /* section 구역별 */
+/* 헤라 */
+.heraParts .imgArea figure { width: 986px; } 
+
 .hera .heraHeader { display: flex; } 
-.hera .heraHeader .imgDes .ps { margin-bottom: 10px; }
-.hera .heraHeader .imgArea { position: relative; height: 518px; overflow-y: hidden; } 
-.hera .heraHeader .submenuHover { position: absolute; display: none; left: 0; top: 22px; padding-right: 40px; } 
-.hera .heraHeader .searchHover { position: absolute; display: none; left: 0; top: 22px; padding-right: 40px; } 
+.hera .heraHeader .imgDes .ps { margin-bottom: 10px; } 
+.hera .heraHeader .imgArea { position: relative; } 
+.hera .heraHeader .submenuHover { position: absolute; display: none; left: 0; top: 22px; } 
+.hera .heraHeader .searchHover { position: absolute; display: none; left: 0; top: 22px; } 
 .hera .heraHeader .submenuHover img,
 .hera .heraHeader .searchHover img { box-shadow: none; } 
-
+/* 헤라 메인 */
 .hera .heraMain { display: flex; } 
 .hera .heraMain .bodyText { height: 168px; margin-bottom: 80px; } 
-.hera .heraMain .imgArea { position: relative; height: 1538px; } 
-.hera .heraMain .snsmodalHover { position: absolute; display: none; left: 0; bottom: 0; padding-right: 40px; } 
+.hera .heraMain .imgArea { position: relative; } 
+.hera .heraMain .snsmodalHover { position: absolute; display: none; left: 0; bottom: 0; } 
 .hera .heraMain .snsmodalHover img { box-shadow: none; } 
-
+/* 헤라 푸터 */
 .hera .heraFooter { display: flex; } 
-/* .hera .heraFooter .bodyText { height: 49px; margin-bottom: 60px; } 
-.hera .heraFooter .imgArea { height: 94px; } */
+.hera .heraFooter .bodyText { height: 49px; margin-bottom: 60px; } 
+.hera .heraFooter .imgArea { height: 94px; } 
 
 .hera .heraPartsDes { display: block; } 
+/* .heraParts .imgArea { min-width: 953px; overflow: hidden; } */
 
-.hera .imgDes .ps {margin-top: 6px;}
+.hera .imgDes .ps { margin-top: 6px; } 
 
 
 
