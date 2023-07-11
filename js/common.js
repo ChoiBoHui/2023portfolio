@@ -160,6 +160,10 @@ $(function () {
         $('.dashBoard').addClass('view');
     })
 
+    if ($('.designSlider').hasClass('slick-initialized')) {
+        //구현
+        $('.designSlider').get(0).slick.setPosition();
+    }
 
     sectionLogin();
     function sectionLogin() {
@@ -190,7 +194,6 @@ $(function () {
             $(this).closest('.slider').find('.slide_util .current_index').text("0" + (c ? c + 1 : 1));
         });
     };
-
 
 
 });
