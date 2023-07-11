@@ -72,7 +72,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* .main .container .contents { } */
 
 /* 타이틀 */
-.main .titleArea { position: sticky; top: 29px; left: 0; height: 46px; margin-bottom: 20px; } 
+.main .titleArea { margin-bottom: 20px; } 
 .main .titleArea .title { font-size: 24px; margin-bottom: 8px; font-weight: 800; } 
 .main .titleArea .title.EN { font-weight: 700; } 
 .main .titleArea .subTitle { color: var(--color-dg); font-size: 14px; } 
@@ -83,7 +83,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .sectionWrap:last-child { margin-bottom: 80px; } 
 /* 스티키 height 값 필순데, 콘텐츠별로 높이값이 다르니까 바로 박아주기 */
 /* .sectionWrap .bodyText 에 붙여줘야함!!! */
-.desArea .sectionWrap .bodyText { position: sticky; top: 239px; display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
+.desArea .sectionWrap .bodyText { display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
 .desArea .sectionWrap .bodyText .ps { font-size: 14px; color: var(--color-dg); line-height: 21px; } 
 /* 세팅 */
 .desArea .setting { margin-bottom: 50px; } 
@@ -101,7 +101,8 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .desArea .imgDes .dot div::before { content: "■"; display: inline-block; font-size: 10px; margin-right: 8px; } 
 
 /* 이미지 영역 */
-.desArea .imgArea { display: flex; text-align: left; } 
+.desArea .imgArea { display: block; text-align: left; } 
+.desArea .imgArea.fleximg { display: flex; text-align: left; } 
 .desArea .imgArea figure { display: block; text-align: center; } 
 .desArea .imgArea figure .des { font-size: 14px; margin-bottom: 8px; } 
 .desArea .imgArea figure img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08); } 
@@ -109,17 +110,22 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 이미지 영역이 스티키 돼야 할때는 클래스 넣어주고, 높이값 박아주기 */
 .desArea .imgSticky { position: sticky; top: 239px; } 
 
-
-
+/* 이미지 나열형 레이아웃, 스티키 안쓰는 */
+.formalList { margin-bottom: 200px; } 
+.formalList .imgArea.fleximg { gap: 10px; } 
+.formalList .des {font-size: 14px; margin-bottom: 8px;}
 
 
 /* 목업이미지 들어가는 메인 index */
 .desArea .sectionWrap.index { margin-bottom: 80px; } 
 /* section 구역별 */
 /* 헤라 */
+.hera .desArea .sectionWrap .bodyText { position: sticky; top: 239px; } 
+.hera .titleArea { position: sticky; top: 29px; left: 0; height: 46px; margin-bottom: 20px; } 
 /* 헤라 인덱스 */
 .hera .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
 .hera .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
+
 
 .hera .heraHeader { display: flex; } 
 .hera .heraHeader .imgDes .ps { margin-bottom: 10px; } 
@@ -155,12 +161,12 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 핑크 및 개인 작업물 */
 /* 북콘서트 인덱스 */
 .gwangbok .index .imgArea { width: 986px; min-width: 986px; } 
-.gwangbok .index .imgArea figure .des {transform: translateY(-120px);}
+.gwangbok .index .imgArea figure .des { transform: translateY(-120px); } 
 .gwangbok .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
-
-.gwangbok .imgArea figure.cardNews .des {transform: translateY(0);}
-.gwangbok .imgArea figure.cardNews img { transform: translateY(0); width: 522px; margin-bottom: 20px; } 
-.gwangbok .desArea .imgArea { display: block; } 
+/* 
+.gwangbok .imgArea figure.cardNews .des { transform: translateY(0); } 
+.gwangbok .imgArea figure.cardNews img { transform: translateY(0); width: 522px; margin-bottom: 20px; } */
+/* .gwangbok .desArea .imgArea { display: block; } */
 
 /* 스토리텔링북 */
 
