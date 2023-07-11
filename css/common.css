@@ -6,7 +6,7 @@ html, body { background-color: #fafafc; color: var(--color-bl); }
 --color-bl: #1d1d1f; --color-dg: #767677; --color-lg: #c2c2c3; --color-bg: #fafafc; } 
 .EN { font-family: montserrat; letter-spacing: -0.027rem; } 
 .cspointer { cursor: pointer; } 
-.caption {text-align: end; font-size: 12px; font-weight: 300; padding: 10px 0; line-height: 18px; color: var(--color-dg);}
+.caption { text-align: end; font-size: 12px; font-weight: 300; padding: 10px 0; line-height: 18px; color: var(--color-dg); } 
 
 /* header Staret */
 header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: left 0.3s; z-index: 1; } 
@@ -114,7 +114,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 이미지 나열형 레이아웃, 스티키 안쓰는 */
 .formalList { margin-bottom: 200px; } 
 .formalList .imgArea.fleximg { gap: 10px; } 
-.formalList .des {font-size: 14px; margin-bottom: 8px;}
+.formalList .des { font-size: 14px; margin-bottom: 8px; } 
 
 
 /* 목업이미지 들어가는 메인 index */
@@ -172,32 +172,33 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .storyBook .index .imgArea figure .des { transform: translateY(-120px); } 
 .storyBook .index .imgArea figure img { transform: translateY(-120px); width: 522px; box-shadow: none; } 
 .storyBook .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
-.storyBook .formalList .imgArea img {box-shadow: none;}
+.storyBook .formalList .imgArea img { box-shadow: none; } 
 
 /* 웹진 */
 .webzine .index .imgArea { width: 986px; min-width: 986px; } 
 .webzine .index .imgArea figure .des { transform: translateY(-120px); } 
 .webzine .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
 .webzine .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
-.webzine .formalList .imgArea figure {text-align: center;}
+.webzine .formalList .imgArea figure { text-align: center; } 
 
 /* 축제 리플렛 */
 .festival .index .imgArea { width: 986px; min-width: 986px; } 
 .festival .index .imgArea figure .des { transform: translateY(-120px); } 
 .festival .index .imgArea figure img { transform: translateY(-120px); width: 400px; box-shadow: none; } 
 .festival .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
-.festival .formalList .imgArea img {box-shadow: none;}
+.festival .formalList .imgArea img { box-shadow: none; } 
 
 /* 투어 콜라보 브로슈어 */
 .collabo .index .imgArea { width: 986px; min-width: 986px; } 
 .collabo .index .imgArea figure .des { transform: translateY(-120px); } 
 .collabo .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
 .collabo .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
-.collabo .formalList .imgArea figure {text-align: center;}
+.collabo .formalList .imgArea figure { text-align: center; } 
 
 
 
 /* 위즈 작업물 */
+/* 대쉬보드 디자인 */
 
 
 
@@ -205,9 +206,36 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 
 
+/* 무주 리조트 리뉴얼 */
+.resortRenewal .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.resortRenewal .index .imgArea figure img { transform: translateY(-120px); width: 986px; } 
+.resortRenewal .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
+.resortRenewal .formalList .imgArea img { box-shadow: none; } 
+
+/* ck와치 3d뷰 */
+.ckWatch .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.ckWatch .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
 
 
 
+/* 사조 디자인 */
+
+
+
+
+
+
+/* 지방시 뷰티 배너 */
+.gbBanner .index .imgArea { width: 986px; min-width: 986px; } 
+.gbBanner .index .imgArea figure .des { transform: translateY(-120px); } 
+.gbBanner .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); } 
+.gbBanner .formalList figure img { display: block; } 
+
+/* 프레쉬 뷰티 배너 */
+.fresh .index .imgArea { width: 986px; min-width: 986px; } 
+.fresh .index .imgArea figure .des { transform: translateY(-120px); } 
+.fresh .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); } 
+.fresh .formalList figure img { display: block; } 
 
 
 
