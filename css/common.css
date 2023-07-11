@@ -163,17 +163,17 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .gwangbok .index .imgArea { width: 986px; min-width: 986px; } 
 .gwangbok .index .imgArea figure .des { transform: translateY(-120px); } 
 .gwangbok .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
-/* 
-.gwangbok .imgArea figure.cardNews .des { transform: translateY(0); } 
-.gwangbok .imgArea figure.cardNews img { transform: translateY(0); width: 522px; margin-bottom: 20px; } */
-/* .gwangbok .desArea .imgArea { display: block; } */
+
 
 /* 스토리텔링북 */
+.storyBook .index .imgArea { width: 986px; min-width: 986px; } 
+.storyBook .index .imgArea figure .des { transform: translateY(-120px); } 
+.storyBook .index .imgArea figure img { transform: translateY(-120px); width: 522px; box-shadow: none; } 
+.storyBook .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
+.storyBook .formalList .imgArea img {box-shadow: none;}
 
-
-
-
-
+/* 웹진 */
+.webzine {}
 
 
 
