@@ -199,11 +199,21 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 위즈 작업물 */
 /* 대쉬보드 디자인 */
+.dashboardDesign .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.dashboardDesign .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
+.dashboardDesign .formalList { text-align: center; } 
+.sectionMob .mobDesign { display: flex; gap: 30px; justify-content: center;} 
+.sectionMob .mobDesign img { width: 380px;} 
 
 
-
-
-
+/* 슬라이더 영역 */
+.slider { position: relative; margin: 0 auto; width: 1200px; margin-bottom: 120px; } 
+.slide_util .slide_pager { display: flex; justify-content: center; } 
+/* 버튼 */
+.slide_util { display: flex; justify-content: center; margin-top: 10px; } 
+.slide_util div { cursor: pointer; } 
+.slide_pager { margin: 12px 10px 0 10px; } 
+.slide_pager .total_index span { padding: 0 8px; } 
 
 
 /* 무주 리조트 리뉴얼 */
@@ -215,14 +225,6 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* ck와치 3d뷰 */
 .ckWatch .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
 .ckWatch .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
-
-
-
-/* 사조 디자인 */
-
-
-
-
 
 
 /* 지방시 뷰티 배너 */

@@ -140,5 +140,57 @@ $(function () {
         $('.dashboardDesign').addClass('view');
     })
 
+    // 퍼블 대쉬보드 퍼블리싱 링크 부분
+    $('.dashboardDesign .dbPublLink a').on('click', function (e) {
+        e.preventDefault();
+        // 메인메뉴
+        $('.nav .mainMenu').removeClass('view');
+        $('.nav .mainMenu.WP').addClass('view');
+
+        // 서브메뉴
+        $('.nav .subMenu').removeClass('view');
+        $('.nav .subMenu.WP').addClass('view');
+
+        // 서브메뉴 리스트
+        $('.nav .subMenu .subMenuList li').removeClass('view');
+        $('.nav .subMenuList.WP .dashBoard').addClass('view');
+
+        // 섹션
+        $('section').removeClass('view')
+        $('.dashBoard').addClass('view');
+    })
+
+
+    sectionLogin();
+    function sectionLogin() {
+        // 슬라이더 초기화
+        $('.designSlider').each(function () {
+            var $slider = $(this);
+            var $prevButton = $slider.closest('.slider').find('.slide_util .prev');
+            var $nextButton = $slider.closest('.slider').find('.slide_util .next');
+
+            $slider.slick({
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                fade: true,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+            });
+
+            $prevButton.on('click', function () {
+                $slider.slick('slickPrev');
+            });
+            $nextButton.on('click', function () {
+                $slider.slick('slickNext');
+            });
+        });
+
+        $('.designSlider').on('afterChange', function (e, s, c) {
+            $(this).closest('.slider').find('.slide_util .current_index').text("0" + (c ? c + 1 : 1));
+        });
+    };
+
+
 
 });
