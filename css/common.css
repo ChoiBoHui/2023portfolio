@@ -6,6 +6,7 @@ html, body { background-color: #fafafc; color: var(--color-bl); }
 --color-bl: #1d1d1f; --color-dg: #767677; --color-lg: #c2c2c3; --color-bg: #fafafc; } 
 .EN { font-family: montserrat; letter-spacing: -0.027rem; } 
 .cspointer { cursor: pointer; } 
+.caption {text-align: end; font-size: 12px; font-weight: 300; padding: 10px 0; line-height: 18px; color: var(--color-dg);}
 
 /* header Staret */
 header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: left 0.3s; z-index: 1; } 
@@ -158,6 +159,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .dashBoard .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
 
 
+
 /* 핑크 및 개인 작업물 */
 /* 북콘서트 인덱스 */
 .gwangbok .index .imgArea { width: 986px; min-width: 986px; } 
@@ -173,7 +175,31 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .storyBook .formalList .imgArea img {box-shadow: none;}
 
 /* 웹진 */
-.webzine {}
+.webzine .index .imgArea { width: 986px; min-width: 986px; } 
+.webzine .index .imgArea figure .des { transform: translateY(-120px); } 
+.webzine .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
+.webzine .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
+.webzine .formalList .imgArea figure {text-align: center;}
+
+/* 축제 리플렛 */
+.festival .index .imgArea { width: 986px; min-width: 986px; } 
+.festival .index .imgArea figure .des { transform: translateY(-120px); } 
+.festival .index .imgArea figure img { transform: translateY(-120px); width: 400px; box-shadow: none; } 
+.festival .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
+.festival .formalList .imgArea img {box-shadow: none;}
+
+/* 투어 콜라보 브로슈어 */
+.collabo .index .imgArea { width: 986px; min-width: 986px; } 
+.collabo .index .imgArea figure .des { transform: translateY(-120px); } 
+.collabo .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
+.collabo .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
+.collabo .formalList .imgArea figure {text-align: center;}
+
+
+
+/* 위즈 작업물 */
+
+
 
 
 
