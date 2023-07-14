@@ -175,35 +175,50 @@ $(function () {
         $('.designSlider').get(0).slick.setPosition();
     }
 
-    sectionLogin();
-    function sectionLogin() {
-        // 슬라이더 초기화
-        $('.designSlider').each(function () {
-            var $slider = $(this);
-            var $prevButton = $slider.closest('.slider').find('.slide_util .prev');
-            var $nextButton = $slider.closest('.slider').find('.slide_util .next');
+    // sectionLogin();
+    // function sectionLogin() {
+    //     // 슬라이더 초기화
+    //     $('.designSlider').each(function () {
+    //         var $slider = $(this);
+    //         var $prevButton = $slider.closest('.slider').find('.slide_util .prev');
+    //         var $nextButton = $slider.closest('.slider').find('.slide_util .next');
 
-            $slider.slick({
-                arrows: false,
-                autoplay: false,
-                autoplaySpeed: 4000,
-                fade: true,
-                pauseOnFocus: true,
-                pauseOnHover: true,
-            });
+    //         $slider.slick({
+    //             arrows: false,
+    //             autoplay: false,
+    //             autoplaySpeed: 4000,
+    //             fade: true,
+    //             pauseOnFocus: true,
+    //             pauseOnHover: true,
+    //         });
 
-            $prevButton.on('click', function () {
-                $slider.slick('slickPrev');
-            });
-            $nextButton.on('click', function () {
-                $slider.slick('slickNext');
-            });
-        });
+    //         $prevButton.on('click', function () {
+    //             $slider.slick('slickPrev');
+    //         });
+    //         $nextButton.on('click', function () {
+    //             $slider.slick('slickNext');
+    //         });
+    //     });
 
-        $('.designSlider').on('afterChange', function (e, s, c) {
-            $(this).closest('.slider').find('.slide_util .current_index').text("0" + (c ? c + 1 : 1));
-        });
-    };
+    //     $('.designSlider').on('afterChange', function (e, s, c) {
+    //         $(this).closest('.slider').find('.slide_util .current_index').text("0" + (c ? c + 1 : 1));
+    //     });
+    // };
 
+    // swiper 슬라이더
+    let slider = new Swiper(".swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
 });
