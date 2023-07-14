@@ -2,7 +2,7 @@ $(function () {
 
 
 
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".login_slider", {
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,
