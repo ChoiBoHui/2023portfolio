@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스와이퍼 테스트중</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- <link rel="stylesheet" href="./css/scrollbar.min.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="./css/swiper.css">
 </head>
 
@@ -16,21 +16,24 @@
     <div class="wrap">
         <div class="container">
             <!-- Slider main container -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide l">
-                        slide01
+            <!-- swiper-container, swiper-wrapper, swiper-slide 는 꼭 지켜줘야하는 필수 클레스 -->
+            <div class="swiper-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide l">
+                            slide01
+                        </div>
+                        <div class="swiper-slide ll">
+                            slide02
+                        </div>
+                        <div class="swiper-slide lll">
+                            slide03
+                        </div>
                     </div>
-                    <div class="swiper-slide ll">
-                        slide02
-                    </div>
-                    <div class="swiper-slide lll">
-                        slide03
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -38,13 +41,14 @@
 
     <!-- script Start -->
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="./js/swiper.js"></script> -->
-    <script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./js/swiper.js"></script>
+    <!-- <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             centeredSlides: true,
+            loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -58,7 +62,7 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
