@@ -62,11 +62,21 @@ $(function () {
     });
 
     // 해상도 1880px 이하, 메뉴 fix
+    // 해상도 상관없이 메뉴는 버튼으로 나오게 할 예정
     $('.triggerBtn').on('click', function () {
         $(this).toggleClass('fix');
         $('header').toggleClass('fix');
         $('footer').toggleClass('fix');
+
+        let mopen = $('.mopen')
+        if ($(this).hasClass('fix')) {
+            mopen.html("close");
+        } else (
+            mopen.html("menu")
+        );
     });
+
+
 
     // 부여된 인덱스 번호와 같은 section에 클레스 추가
     $('.subMenuList li').on('click', function () {
@@ -175,7 +185,7 @@ $(function () {
 
             $slider.slick({
                 arrows: false,
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 4000,
                 fade: true,
                 pauseOnFocus: true,
