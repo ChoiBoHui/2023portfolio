@@ -9,7 +9,8 @@ html, body { background-color: #fafafc; color: var(--color-bl); }
 .caption { text-align: end; font-size: 12px; font-weight: 300; padding: 10px 0; line-height: 18px; color: var(--color-dg); } 
 
 /* header Staret */
-header { position: fixed; top: 0; left: 0; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: left 0.3s; z-index: 1; } 
+header { position: fixed; top: 0; left: -323px; width: 323px; height: 100%; padding: 30px 30px 30px 40px; border-right: 1px solid var(--color-bl); background-color: rgba(250, 250, 252, 0.7); -ms-backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); -moz-backdrop-filter: blur(6px); -o-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: left 0.3s; z-index: 1; } 
+header.fix { left: 0px; } 
 /* 로고영역 */
 header h1 { margin-bottom: 22px; } 
 header h1 a { display: inline-block; vertical-align: bottom; } 
@@ -41,12 +42,13 @@ header h1:hover .name span { opacity: 1; }
 .nav .subMenu li.view a::after { content: "*"; position: absolute; top: 0; right: 0; display: block; font-family: montserrat; font-size: 18px; font-weight: 500; color: var(--color-bl); } 
 
 /* 메뉴버튼 영역 */
-header .triggerArea { position: absolute; display: none; top: 0; left: 100%; height: 100%; width: 20px; } 
+header .triggerArea { position: absolute; display: block; top: 0; left: 100%; height: 100%; width: 20px; } 
 .triggerArea .triggerBtn { width: 40px; height: 39px; border-right: 1px solid var(--color-bl); border-bottom: 1px solid var(--color-bl); cursor: pointer; opacity: 1;  background-color: var(--color-bg); } 
 .triggerArea .triggerBtn .mopen { text-align: center; font-size: 14px; transform: translateY(11px);  } 
 
 /* footer Start */
-footer { position: fixed; bottom: 0; left: 0; width: 323px; padding: 30px 30px 30px 40px; border-top: 1px solid var(--color-bl); transition: left 0.3s; z-index: 2; } 
+footer { position: fixed; bottom: 0; left: -323px; width: 323px; padding: 30px 30px 30px 40px; border-top: 1px solid var(--color-bl); transition: left 0.3s; z-index: 2; } 
+footer.fix { left: 0px; } 
 footer .kakaoChat { font-size: 16px; font-weight: 700; margin-bottom: 5px; } 
 footer .email { font-size: 16px; font-weight: 600; margin-bottom: 5px; } 
 footer .githubLink { font-size: 16px; font-weight: 600; margin-bottom: 16px; } 
@@ -58,12 +60,13 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 
 /* main Start */
-.main { position: relative; margin-left: 323px; padding: 0 40px 0 80px; } 
+/* .main { position: relative; margin-left: 323px; padding: 0 40px 0 80px; }  */
+.main { position: relative; margin: 0 auto; padding: 0 40px 0 80px; } 
 /* 그라디언트 작업 취소 포지션 스티키로 대체 */
 /* 샘플 background: linear-gradient(to top, red 10%, black 50%, cyan 50%); */
 /* .main .container::before { content: ""; display: block; width: 474px; height: 238px; position: fixed; top: 0; left: 323px; background: linear-gradient(to bottom, #fafafc 208px, #fafafc 208px, transparent 238px); } */
 
-
+.main .container { margin: 0 auto; max-width: 1494px; }
 .main .container section { margin-top: 235px; display: none; } 
 .main .container section.view { display: block; } 
 
@@ -242,16 +245,16 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 모바일 */
 @media (max-width: 1880px) { /* html, body { overflow-x: hidden; width: 100%; } */
-header { left: -323px; } 
-header.fix { left: 0px; } 
-header .triggerArea { display: block; } 
+/* header { left: -323px; } 
+header.fix { left: 0px; }  */
+/* header .triggerArea { display: block; }  */
 /* .gnbWrap:hover header { left: 0px; }  */
 
-footer { left: -323px; } 
-footer.fix { left: 0px; } 
+/* footer { left: -323px; } 
+footer.fix { left: 0px; }  */
 /* .gnbWrap:hover footer { left: 0px; }  */
 
 
-.main { position: relative; margin-left: 0px; padding: 0 40px 0 80px; } 
-.main .container { margin: 0 auto; max-width: 1494px; } 
+/* .main { position: relative; margin-left: 0px; padding: 0 40px 0 80px; }  */
+/* .main .container { margin: 0 auto; max-width: 1494px; }  */
  }
