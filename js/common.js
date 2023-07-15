@@ -77,6 +77,12 @@ $(function () {
     });
 
 
+    setTimeout(function () {
+        $('header').removeClass('fix');
+        $('footer').removeClass('fix');
+        $('.triggerBtn').removeClass('fix');
+    }, 800);
+
 
     // 부여된 인덱스 번호와 같은 section에 클레스 추가
     $('.subMenuList li').on('click', function () {
@@ -174,36 +180,6 @@ $(function () {
         //구현
         $('.designSlider').get(0).slick.setPosition();
     }
-
-    // sectionLogin();
-    // function sectionLogin() {
-    //     // 슬라이더 초기화
-    //     $('.designSlider').each(function () {
-    //         var $slider = $(this);
-    //         var $prevButton = $slider.closest('.slider').find('.slide_util .prev');
-    //         var $nextButton = $slider.closest('.slider').find('.slide_util .next');
-
-    //         $slider.slick({
-    //             arrows: false,
-    //             autoplay: false,
-    //             autoplaySpeed: 4000,
-    //             fade: true,
-    //             pauseOnFocus: true,
-    //             pauseOnHover: true,
-    //         });
-
-    //         $prevButton.on('click', function () {
-    //             $slider.slick('slickPrev');
-    //         });
-    //         $nextButton.on('click', function () {
-    //             $slider.slick('slickNext');
-    //         });
-    //     });
-
-    //     $('.designSlider').on('afterChange', function (e, s, c) {
-    //         $(this).closest('.slider').find('.slide_util .current_index').text("0" + (c ? c + 1 : 1));
-    //     });
-    // };
 
     // swiper 슬라이더
     let slider = new Swiper(".swiper", {
