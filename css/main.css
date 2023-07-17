@@ -61,32 +61,28 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .main .hello .title { font-size: 18px; font-weight: 700; margin-bottom: 10px; } 
 .section_title { font-size: 32px; font-weight: 700; font-family: 'montserrat'; margin-bottom: 40px; } 
 .section_title~.section_title { padding-top: 100px; } 
-section { position: relative; display: flex; margin-bottom: 80px; text-align: left; justify-content: center; } 
+.flexArea { display: flex; gap: 30px; justify-content: center; margin-bottom: 80px; } 
+section { position: relative; justify-content: center; box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); transition: 0.3s; } 
+section:hover { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08); } 
 
 /* 글 들어가는 구역 */
+.bodyText { position: absolute; display: block; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 387px; min-width: 387px; font-size: 16px; opacity: 0; transition: 0.3s; z-index: 1; } 
+section:hover .bodyText { opacity: 1; } 
+section::after { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.85);-ms-backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); -moz-backdrop-filter: blur(3px); -o-backdrop-filter: blur(3px); backdrop-filter: blur(3px);  transition: 0.3s; opacity: 0; } 
+section:hover::after { opacity: 1; } 
+section.dashBoard::after {background-color: rgba(255, 255, 255, 0.87);}
 /* 타이틀 */
 .bodyText .titleArea { margin-bottom: 20px; } 
 .bodyText .titleArea .title { font-size: 24px; margin-bottom: 8px; font-weight: 800; } 
 .bodyText .titleArea .title.EN { font-weight: 700; } 
 .bodyText .titleArea .subTitle { color: var(--color-dg); font-size: 14px; } 
 /* 설명글 */
-.bodyText { display: block; width: 387px; min-width: 387px; margin: auto 0 auto 60px; font-size: 16px; } 
 .bodyText .ps { font-size: 14px; color: var(--color-dg); line-height: 21px; } 
 /* 세팅 */
 .bodyText .setting div~div { line-height: 1.2; margin-top: 8px; } 
 .bodyText .setting div div { display: inline-block; } 
 .bodyText .setting .title { font-weight: 700; margin-right: 8px; } 
-/* 이미지 설명 */
-/* .desArea .imgDes { line-height: 26px; } 
-.desArea .imgDes .title { display: block; font-weight: 700; margin-right: 6px; } 
-.desArea .imgDes .br { margin-bottom: 18px; } 
-.desArea .imgDes .sbr { margin-bottom: 10px; } */
-
-
-
 
 
 /* 이미지영역 */
 .thumbnail { width: 600px; } 
-.thumbnail img { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.04); transition: 0.3s; } 
-.thumbnail img:hover { box-shadow: 12px 12px 18px 0px rgba(0, 0, 0, 0.08); } 
