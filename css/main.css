@@ -55,11 +55,12 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 인덱스 메인 시작 */
 /* .main .container { width: 1050px; margin: 0 auto; } */
-.main {margin-top: 180px;}
+.main { margin-top: 180px; } 
 .main .container { width: 1200px; margin: 0 auto; } 
 .main .hello { font-size: 16px; line-height: 24px; font-weight: 300; margin-bottom: 100px; } 
-.main .hello .title { font-size: 18px; font-weight: 700; margin-bottom: 10px;}
-
+.main .hello .title { font-size: 18px; font-weight: 700; margin-bottom: 10px; } 
+.section_title { font-size: 30px; font-weight: 600; font-family: 'montserrat'; margin-bottom: 30px; } 
+.section_title~.section_title{padding-top: 100px;}
 section { position: relative; display: flex; margin-bottom: 80px; } 
 
 /* 글 들어가는 구역 */
