@@ -173,6 +173,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 .festival .index .imgArea figure img { width: 400px; box-shadow: none; } 
 .festival .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .festival .formalList .imgArea img { box-shadow: none; } 
+.festival .bodyText { transform: translateY(-46px); } 
 
 /* 투어 콜라보 브로슈어 */
 .collabo .index .imgArea { width: 986px; min-width: 986px; } 
