@@ -158,8 +158,9 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 스토리텔링북 */
 .storyBook .index .imgArea { width: 986px; min-width: 986px; } 
 .storyBook .index .imgArea figure img { width: 522px; box-shadow: none; } 
-.storyBook .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
-.storyBook .formalList .imgArea img { box-shadow: none; } 
+.storyBook .swiper-button-next,
+.storyBook .swiper-button-prev { color: var(--color-bl); } 
+.storyBook .swiper-pagination-bullet-active { background-color: var(--color-bl); }
 
 /* 웹진 */
 .webzine .index .imgArea { width: 986px; min-width: 986px; } 
