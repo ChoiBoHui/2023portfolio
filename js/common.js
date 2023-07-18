@@ -6,9 +6,6 @@ $(function () {
         let li = $(this).closest('li');
         let subMenu = $(this).siblings('.subMenu');
 
-        // 메인메뉴랑 서브메뉴 클릭할때 스크롤 top으로
-        $('html, body').scrollTop(0);
-
         // mainMenu 적용
         $(this).addClass('open');
         li.siblings().find('.mainMenu').removeClass('open');
