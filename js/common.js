@@ -16,12 +16,12 @@ $(function () {
     });
 
     // 서브메뉴 클릭 이벤트
-    $('.nav .subMenu .subMenuList li').on('click', function () {
+    $('.nav .subMenu .subMenuList li a').on('click', function () {
         // let li = $(this).closest('li');
         $('html, body').scrollTop(0);
 
-        $(this).addClass('view');
-        $(this).siblings().removeClass('view');
+        $('.nav .subMenu .subMenuList li').removeClass('view');
+        $(this).closest('li').addClass('view');
     });
 
     // 네비게이션 fix, 모바일 메뉴
