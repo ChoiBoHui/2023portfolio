@@ -57,7 +57,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* main Start */
 .main { position: relative; margin: 0 auto; padding: 0 40px 0 80px; } 
 .main .container { margin: 0 auto; max-width: 1494px; } 
-.main .container section { margin-top: 235px; } 
+.main .container section { margin-top: 160px; } 
 
 /* .main .container .contents { } */
 
@@ -74,6 +74,7 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 스티키 height 값 필순데, 콘텐츠별로 높이값이 다르니까 바로 박아주기 */
 /* .sectionWrap .bodyText 에 붙여줘야함!!! */
 .desArea .sectionWrap .bodyText { display: block; width: 387px; min-width: 387px; font-size: 16px; margin-right: 80px; } 
+
 .desArea .sectionWrap .bodyText .ps { font-size: 14px; color: var(--color-dg); line-height: 21px; } 
 /* 세팅 */
 .desArea .setting { margin-bottom: 50px; } 
@@ -107,14 +108,16 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 
 /* 목업이미지 들어가는 메인 index */
-.desArea .sectionWrap.index { margin-bottom: 80px; } 
+.desArea .sectionWrap.index { margin-bottom: 180px; } 
+.index .bodyText { margin: auto 80px auto 0; position: static !important; } 
 /* section 구역별 */
 /* 헤라 */
-.hera .desArea .sectionWrap .bodyText { position: sticky; top: 239px; } 
 .hera .titleArea { margin-bottom: 20px; } 
 /* 헤라 인덱스 */
+/* .hera .index .bodyText { margin: auto 80px auto 0; position: static; } */
+.hera .bodyText { position: sticky; top: 239px; } 
 .hera .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
-.hera .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
+.hera .index .imgArea figure img { box-shadow: none; width: 986px; } 
 
 
 .hera .heraHeader { display: flex; } 
@@ -145,42 +148,34 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 현대글로벌 대쉬보드 퍼블 */
 /* 대쉬보드 인덱스 */
 .dashBoard .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
-.dashBoard .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
+.dashBoard .index .imgArea figure img { box-shadow: none; width: 986px; } 
 
 
 
 /* 핑크 및 개인 작업물 */
-/* 북콘서트 인덱스 */
-.gwangbok .index .imgArea { width: 986px; min-width: 986px; } 
-.gwangbok .index .imgArea figure .des { transform: translateY(-120px); } 
-.gwangbok .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
 
 
 /* 스토리텔링북 */
 .storyBook .index .imgArea { width: 986px; min-width: 986px; } 
-.storyBook .index .imgArea figure .des { transform: translateY(-120px); } 
-.storyBook .index .imgArea figure img { transform: translateY(-120px); width: 522px; box-shadow: none; } 
+.storyBook .index .imgArea figure img { width: 522px; box-shadow: none; } 
 .storyBook .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .storyBook .formalList .imgArea img { box-shadow: none; } 
 
 /* 웹진 */
 .webzine .index .imgArea { width: 986px; min-width: 986px; } 
-.webzine .index .imgArea figure .des { transform: translateY(-120px); } 
-.webzine .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
+.webzine .index .imgArea figure img { width: 522px; } 
 .webzine .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .webzine .formalList .imgArea figure { text-align: center; } 
 
 /* 축제 리플렛 */
 .festival .index .imgArea { width: 986px; min-width: 986px; } 
-.festival .index .imgArea figure .des { transform: translateY(-120px); } 
-.festival .index .imgArea figure img { transform: translateY(-120px); width: 400px; box-shadow: none; } 
+.festival .index .imgArea figure img { width: 400px; box-shadow: none; } 
 .festival .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .festival .formalList .imgArea img { box-shadow: none; } 
 
 /* 투어 콜라보 브로슈어 */
 .collabo .index .imgArea { width: 986px; min-width: 986px; } 
-.collabo .index .imgArea figure .des { transform: translateY(-120px); } 
-.collabo .index .imgArea figure img { transform: translateY(-120px); width: 522px; } 
+.collabo .index .imgArea figure img { width: 522px; } 
 .collabo .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .collabo .formalList .imgArea figure { text-align: center; } 
 
@@ -189,13 +184,13 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 /* 위즈 작업물 */
 /* 대쉬보드 디자인 */
 .dashboardDesign .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
-.dashboardDesign .index .imgArea figure img { box-shadow: none; transform: translateY(-120px); width: 986px; } 
+.dashboardDesign .index .imgArea figure img { box-shadow: none; width: 986px; } 
 .dashboardDesign .formalList { text-align: center; } 
-.sectionMob {text-align: center;}
+.sectionMob { text-align: center; } 
 .sectionMob .mobDesign { display: flex; gap: 30px; justify-content: center; } 
 .sectionMob .mobDesign img { width: 380px; } 
 /* 슬라이더 영역 */
-.slider { position: relative; margin: 0 auto; width: 1200px; margin-bottom: 120px; text-align: center; } 
+.slider { position: relative; margin: 0 auto; width: 100%; margin-bottom: 120px; text-align: center; } 
 .slide_util .slide_pager { display: flex; justify-content: center; } 
 /* 버튼 */
 .slide_util { display: flex; justify-content: center; margin-top: 10px; } 
@@ -206,12 +201,16 @@ footer .copy { font-size: 12px; color: var(--color-dg); line-height: 16px; }
 
 /* 무주 리조트 리뉴얼 */
 .resortRenewal .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
-.resortRenewal .index .imgArea figure img { transform: translateY(-120px); width: 986px; } 
+.resortRenewal .index .imgArea figure img { width: 986px; } 
 .resortRenewal .formalList .imgArea.fleximg { flex-direction: column; gap: 60px; } 
 .resortRenewal .formalList .imgArea img { box-shadow: none; } 
+.resortRenewal .swiper-button-next,
+.resortRenewal .swiper-button-prev { color: #fff; } 
+.resortRenewal .swiper-pagination-bullet-active { background-color: #fff; } 
 
 /* ck와치 3d뷰 */
 .ckWatch .index .imgArea { width: 986px; min-width: 986px; justify-content: flex-end; } 
+.ckWatch .index .imgArea figure { transform: translateY(40px); } 
 .ckWatch .index .imgArea figure img { box-shadow: none; } 
 
 
